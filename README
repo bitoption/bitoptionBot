@@ -1,0 +1,36 @@
+########################################################################
+##	Name: BitoptionBot.py
+##	Description:This is a script to do back testing using Black-Scholes.
+##                As well can direct call and put posts for a defined
+##                client on bitoption.org.
+##                The idea is to use the bot to make a rough predictions
+##                and then use those predictions to make calls and puts.
+##
+##
+##	Author: Peter and Ryan
+##  URL:    https://bitoption.org
+##  Email:  admin@bitoption.com
+##          ryan@bitoption.com
+##  Date: July,2011
+##
+########################################################################
+
+
+This is a very basic initial bitoption bot. So, be nice with comments 
+and don't get too angry when you get errors that are our fault :-)
+
+One class of the bot has limited access to the market and should be able 
+to write and bid calls and puts.
+
+Another class of the bot is devoted to back testing. This uses 
+Black-Scholes to make simple predictions about fair option pricing and 
+then uses that to make offers and bids in order to make money.
+
+Instructions:
+1)First create a file named "userinfo"
+2) Write your username on first line and password on second.
+3) Run it as:
+    $BitoptionBot.py > output.csv
+4) Check out the functions run() and getResults() to see what they take 
+    as input and how you can change it!
+
